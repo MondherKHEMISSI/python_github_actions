@@ -26,7 +26,7 @@ def main():
 
 
     # Read the old content if it exists
-    old_content = "Aucun logement trové"
+    old_content = "Aucun logement trouvé"
 
 
     # Get the content of the web page
