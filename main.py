@@ -33,8 +33,9 @@ def main():
     content = get_page_content(url)
     # Extract the specific field content
     field_content = get_specific_field(content, css_selector)
+
     # If there is a change, send a notification
-    if old_content and field_content != old_content:
+    if old_content and field_content and (field_content != old_content):
         message = f"The content of the specific field in {url} has been updated."
         send_discord_notification(discord_webhook_url, message)
         old_content = field_content
