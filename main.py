@@ -20,7 +20,7 @@ def send_discord_notification(webhook_url, message):
     response.raise_for_status()
 
 def main():
-    url = "https://trouverunlogement.lescrous.fr/tools/34/search?bounds=-0.6386987_44.9161806_-0.5336838_44.8107826"  # Replace with the URL you want to monitor
+    url = "https://trouverunlogement.lescrous.fr/tools/36/search?bounds=-0.6386987_44.9161806_-0.5336838_44.8107826"  # Replace with the URL you want to monitor
     css_selector = ".SearchResults-desktop"  # Replace with the CSS selector of the specific field you want to monitor
     discord_webhook_url = "https://discordapp.com/api/webhooks/1259477262189727775/t92Saq-zeXVZ6jh_eOl-H7Rd2P0v_i9ETgtHQOO1Xr5KcfSWVfO3z7QySLJVbbt01tbw"
 
